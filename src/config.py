@@ -1,9 +1,11 @@
 import os
 
+MY_SECRET = 'my_precious_little_secret'
 
 class BaseConfig:
     TESTING = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SECRET_KEY = MY_SECRET
 
 
 class DevelopmentConfig(BaseConfig):

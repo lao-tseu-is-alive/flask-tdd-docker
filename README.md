@@ -51,3 +51,5 @@ and by the way you can navigate with your browser to : http://127.0.0.1:5000/pin
 [Modern Python Environments with pyenv](https://testdriven.io/blog/python-environments/)
 
 [pyenv](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
+
+[last but not least](https://testdriven.io/courses/tdd-flask/pytest-setup/)
