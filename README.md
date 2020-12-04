@@ -43,6 +43,7 @@ The next time you can just run :
 and by the way you can navigate with your browser to : http://127.0.0.1:5000/ping to test that it works
 
 ##related links:
+
 [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 
 [Flask-RESTX](https://flask-restx.readthedocs.io/en/latest/index.html)

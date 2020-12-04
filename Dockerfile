@@ -12,6 +12,12 @@ ENV PYTHONDONTWRITEBYTECODE 1
 # Prevents Python from buffering stdout and stderr (equivalent to python -u option)
 ENV PYTHONUNBUFFERED 1
 
+# install system dependencies
+RUN apt-get update \
+  && apt-get -y install netcat gcc postgresql \
+  && apt-get clean
+
+
 # add and install requirements
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
@@ -19,5 +25,6 @@ RUN pip install -r requirements.txt
 # add app
 COPY . .
 
-# run server
-CMD python manage.py run -h 0.0.0.0
+# add entrypoint.sh
+COPY ./entrypoint.sh .
+RUN chmod +x /usr/src/app/entrypoint.sh
