@@ -14,5 +14,5 @@ def test_ping(test_app):
 
     # Then
     assert resp.status_code == 200
-    assert 'pong is alive!' in data['message']
+    assert 'pong is alive in 2021 !' in data['message']
     assert 'success' in data['status']

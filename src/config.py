@@ -2,6 +2,7 @@ import os
 
 MY_SECRET = 'my_precious_little_secret'
 
+
 class BaseConfig:
     TESTING = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False

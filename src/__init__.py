@@ -1,7 +1,6 @@
 # src/__init__.py
 import os
-import sys
-from flask import Flask, jsonify
+from flask import Flask
 from flask_restx import Resource, Api
 from flask_sqlalchemy import SQLAlchemy
 
@@ -20,6 +19,7 @@ else:
 
 # instantiate the db
 db = SQLAlchemy(app)
+
 
 # in case you want to see the app config in the logs uncomment next line
 # print(app.config, file=sys.stderr)
@@ -42,7 +42,7 @@ class Ping(Resource):
     def get(self):
         return {
             'status': 'success',
-            'message': 'pong is alive!'
+            'message': 'pong is alive in 2021 !'
         }
 
 

@@ -4,6 +4,11 @@ testing flask and flask_restx
 ## getting started with docker
 obviously you need to have docker and docker-compose installed to try this.
 
+install docker on your computer : https://docs.docker.com/engine/install/
+
+install docker-compose like explained here : https://docs.docker.com/compose/install/
+
+
 to build the image :
 
     docker-compose build  
@@ -21,6 +26,9 @@ now you can browse to http://127.0.0.1:5004/ or directly to http://127.0.0.1:500
 you can have a look on the logs with :
 
     docker-compose logs
+
+you can also have a look at what is running with :
+    docker-compose ps
 
 ## getting started without docker
 here is how to get started fast :
